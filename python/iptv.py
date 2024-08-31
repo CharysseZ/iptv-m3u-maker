@@ -7,9 +7,6 @@ import time
 import re
 import json
 import os
-from plugins import base
-# from plugins import lista
-from plugins import listb
 from plugins import dotpy
 
 class Iptv (object):
@@ -23,14 +20,8 @@ class Iptv (object):
 
         self.DB.chkTable()
 
-        Base = base.Source()
-        Base.getSource()
-
         Dotpy = dotpy.Source()
         Dotpy.getSource()
-
-        listB = listb.Source()
-        listB.getSource()
 
         self.outPut()
         self.outJson()
