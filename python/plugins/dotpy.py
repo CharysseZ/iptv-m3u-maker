@@ -17,7 +17,7 @@ class Source(object):
         self.now = int(time.time() * 1000)
 
     def getSource(self):
-        sourceFilePath = './plugins/dotpy_source'
+        sourceFilePath = '/srv/iptv/python/plugins/dotpy_source'
         all_lines = []
         network_addresses = []
         with open(sourceFilePath, 'r') as f:
