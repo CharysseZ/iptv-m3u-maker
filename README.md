@@ -56,7 +56,7 @@ git clone https://github.com/EvilCult/iptv-m3u-maker.git
 
 cd iptv-m3u-maker
 
-docker build -t iptv-maker:latest .
+docker build  --no-cache -t iptv-maker:latest .
 
 docker run -it -d --name iptv -p 9527:9527 iptv-maker:latest
 ```
